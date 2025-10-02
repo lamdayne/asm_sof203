@@ -1,0 +1,135 @@
+.user-container {
+	background: white;
+	border-radius: 20px;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+	width: 95%;
+	padding: 40px;
+	height: 75vh;
+}
+
+.user-header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.user-header h1 {
+	color: #333;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.user-header p {
+	color: #666;
+	font-size: 14px;
+}
+
+.user-form-group {
+	margin-bottom: 20px;
+}
+
+.user-form-group label {
+	display: block;
+	margin-bottom: 8px;
+	color: #333;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.user-form-group input,
+.user-form-group select {
+	width: 100%;
+	padding: 12px 15px;
+	border: 2px solid #e1e8ed;
+	border-radius: 8px;
+	font-size: 14px;
+	transition: all 0.3s ease;
+	font-family: inherit;
+}
+
+.user-form-group input:focus,
+.user-form-group select:focus {
+	outline: none;
+	border-color: #667eea;
+	box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.user-form-row {
+	display: flex;
+	gap: 20px;
+}
+
+.user-form-row .user-form-group {
+	flex: 1;
+}
+
+.user-form-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 90px;
+}
+
+.user-radio-group {
+	display: flex;
+	gap: 20px;
+	margin-top: 8px;
+}
+
+.user-radio-option {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.user-radio-option input[type="radio"] {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.user-radio-option label {
+	margin: 0;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.user-submit-btn {
+	width: 100%;
+	padding: 14px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	margin-top: 10px;
+}
+
+.user-submit-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.user-submit-btn:active {
+	transform: translateY(0);
+}
+
+.user-required {
+	color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+	.user-form-row {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.user-form-columns {
+		grid-template-columns: 1fr;
+	}
+
+	.user-container {
+		padding: 30px 20px;
+	}
+}
